@@ -1,58 +1,114 @@
-# 🎰 Solidity Lottery Smart Contract
+# 🔗 Solidity Projects
 
-A simple decentralized lottery smart contract built with Solidity. The contract allows users to participate by sending ETH and selects a winner from the registered participants.
+A collection of my Solidity smart contract projects created while learning and practicing **Blockchain Development, Smart Contracts, and Web3**.
 
-## 🚀 Features
+These projects focus on understanding how decentralized applications can use smart contracts to manage transactions, users, assets, and real-world use cases.
 
-- 👥 Multiple participants
-- 💰 ETH-based participation
-- 🎲 Random winner selection
-- 🏆 Winner receives the contract balance
-- 🔐 Manager-controlled winner selection
-- 🧹 Participants reset after winner selection
+---
 
-## 🛠️ Tech Stack
+## 📂 Projects
 
-- Solidity
-- Remix IDE
-- Ethereum
-- Sepolia Testnet
-- MetaMask
+### 🎟️ 1. Event Organizer Smart Contract
 
-## 📋 Smart Contract Functions
+A smart contract for creating events, selling tickets using Ether, and transferring tickets between wallet addresses.
 
-### `Enter()`
-Allows a user to participate in the lottery by sending the required ETH.
+#### Features
 
-### `Get_Balance()`
-Returns the current ETH balance of the contract.
+* Create future events
+* Set ticket price and total ticket quantity
+* Buy multiple tickets using ETH
+* Track remaining tickets
+* Transfer tickets to another wallet
+* Store event and ticket ownership on-chain
 
-### `Select_Winner()`
-Selects a winner from the participants and transfers the contract balance to the selected winner.
+#### Solidity Concepts
 
-### `Random()`
-Generates a pseudo-random value used for selecting the winner.
+* `struct`
+* `mapping`
+* Nested mappings
+* `msg.sender`
+* `msg.value`
+* `block.timestamp`
+* `payable`
+* `require()`
+* `storage`
+* Ether transactions
 
-## 🔄 How It Works
+---
 
-1. Deploy the Lottery contract.
-2. Users enter the lottery by sending ETH.
-3. Their addresses are stored in the participants array.
-4. The manager calls `Select_Winner()`.
-5. A participant is selected.
-6. The contract balance is transferred to the winner.
-7. The participants list is reset for the next round.
+### 🎰 2. Lottery Smart Contract
 
-## 🌐 Network
+A blockchain-based lottery smart contract where participants can enter by paying Ether and a winner can be selected by the manager.
 
-The contract was deployed and tested on the **Sepolia Testnet**.
+#### Features
 
-## ⚠️ Disclaimer
+* ETH-based lottery participation
+* Participant address management
+* Manager-controlled winner selection
+* Random winner selection
+* Automatic prize transfer
+* On-chain transaction handling
 
-This project is created for learning and educational purposes. The randomness used in this contract is not suitable for production or real-money lotteries.
+#### Solidity Concepts
+
+* `payable`
+* `msg.value`
+* `msg.sender`
+* `address`
+* `address payable`
+* Dynamic arrays
+* `require()`
+* Ether transfer
+* Contract balance
+* Random number generation
+
+---
+
+## 🛠️ Technologies Used
+
+* **Solidity**
+* **Ethereum / EVM**
+* **Remix IDE**
+* **MetaMask**
+* **Git & GitHub**
+
+---
+
+## 🧠 What I Am Learning
+
+Through these projects, I am practicing:
+
+* Smart contract development
+* Solidity syntax and programming concepts
+* Ethereum transactions
+* Wallet interaction
+* ETH payments
+* Mappings and structs
+* Contract state management
+* Access control
+* On-chain data handling
+
+---
+
+## 🔮 Future Plans
+
+I plan to connect these smart contracts with a Web3 frontend using:
+
+* JavaScript
+* React.js
+* ethers.js
+* MetaMask
+
+The goal is to convert these smart contracts into complete **Web3 DApps** with user-friendly interfaces.
+
+---
 
 ## 👨‍💻 Author
 
-Rehan Ansari
+**Rehan Ansari**
 
-GitHub: https://github.com/Rehan-Code764
+Blockchain Developer | Solidity | Web3
+
+---
+
+⭐ This repository documents my practical learning journey in **Solidity and Blockchain Development**.
