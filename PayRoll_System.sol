@@ -4,7 +4,7 @@ pragma solidity ^0.8.20;
 contract PayRoll {
 
     address public owner;
-    uint public payinterval =0days;
+    uint public payinterval =0 ;
 
     address[] public all;
 
