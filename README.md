@@ -63,6 +63,51 @@ A blockchain-based lottery smart contract where participants can enter by paying
 * Random number generation
 
 ---
+3. Payroll System Smart Contract 💰
+
+A payroll management smart contract that allows an administrator to manage employees and distribute salaries in ETH.
+
+Features
+
+Add employees with their names, wallet addresses, and salaries.
+
+Update employee salaries.
+
+Remove employees.
+
+Store employee records using mappings.
+
+Maintain an array of employee addresses.
+
+Pay all eligible employees in a single transaction.
+
+Pay an individual employee.
+
+Fund the contract with ETH.
+
+Check contract balance and employee count.
+
+Configure the salary payment interval.
+
+Concepts Practiced
+
+Structs and mappings
+
+Arrays and loops
+
+Modifiers and access control
+
+Block timestamps
+
+Payable addresses
+
+ETH transfers using call
+
+Contract balance management
+
+File: PayRoll.sol
+
+Note: Salary values are stored in Wei. Batch salary payments require sufficient contract balance and gas. The current zero payment interval is intended for testing and allows eligible employees to be paid without waiting for a time interval.
 
 ## 🛠️ Technologies Used
 
@@ -73,6 +118,8 @@ A blockchain-based lottery smart contract where participants can enter by paying
 * **Git & GitHub**
 
 ---
+
+
 
 ## 🧠 What I Am Learning
 
