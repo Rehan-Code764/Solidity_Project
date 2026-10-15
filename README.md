@@ -1,161 +1,172 @@
-# 🔗 Solidity Projects
+# Solidity Projects 🚀
 
-A collection of my Solidity smart contract projects created while learning and practicing **Blockchain Development, Smart Contracts, and Web3**.
+Welcome to my Solidity Projects Repository! This repository contains my hands-on smart contract projects built while learning **Solidity, Smart Contract Development, and Blockchain Technology**.
 
-These projects focus on understanding how decentralized applications can use smart contracts to manage transactions, users, assets, and real-world use cases.
+My goal is to strengthen my blockchain development skills by building practical projects and understanding how smart contracts work on Ethereum-compatible networks.
 
----
+## 👨‍💻 About Me
+
+I am a Computer Engineering diploma student learning Blockchain Development and Web3 technologies. I enjoy building smart contracts and exploring decentralized applications (dApps).
+
+- **GitHub:** [Rehan-Code764](https://github.com/Rehan-Code764)
+- **Focus:** Solidity, Smart Contracts, Blockchain Development
+- **Tools:** Remix IDE, MetaMask, Git, GitHub
+- **Network for Testing:** Ethereum Sepolia Testnet
 
 ## 📂 Projects
 
-### 🎟️ 1. Event Organizer Smart Contract
+### 1. 🎟️ Lottery Smart Contract
 
-A smart contract for creating events, selling tickets using Ether, and transferring tickets between wallet addresses.
+A smart contract that allows participants to enter a lottery and enables the manager to select a winner.
 
-#### Features
+**Features**
+- Participants can enter by sending ETH.
+- Stores participant addresses.
+- Allows the manager to select a winner.
+- Transfers the prize to the selected winner.
 
-* Create future events
-* Set ticket price and total ticket quantity
-* Buy multiple tickets using ETH
-* Track remaining tickets
-* Transfer tickets to another wallet
-* Store event and ticket ownership on-chain
+**Concepts Learned**
+- Payable functions
+- Address and payable types
+- Arrays and access control
+- ETH transfers
+- Smart contract state management
 
-#### Solidity Concepts
+### 2. 🎉 Event Organizer Smart Contract
 
-* `struct`
-* `mapping`
-* Nested mappings
-* `msg.sender`
-* `msg.value`
-* `block.timestamp`
-* `payable`
-* `require()`
-* `storage`
-* Ether transactions
+A smart contract for creating events and purchasing event tickets.
 
----
+**Features**
+- Create events with a name, date, ticket price, and ticket count.
+- Purchase tickets for an event.
+- Track event information and ticket availability.
+- Practice managing multiple events through a smart contract.
 
-### 🎰 2. Lottery Smart Contract
+**Concepts Learned**
+- Structs
+- Mappings
+- Arrays and event IDs
+- Function validation
+- Smart contract state updates
 
-A blockchain-based lottery smart contract where participants can enter by paying Ether and a winner can be selected by the manager.
+### 3. 💼 Payroll System Smart Contract
 
-#### Features
+A smart contract designed to explore how employee salary payments can be managed on the blockchain.
 
-* ETH-based lottery participation
-* Participant address management
-* Manager-controlled winner selection
-* Random winner selection
-* Automatic prize transfer
-* On-chain transaction handling
+**Features**
+- Store the payroll manager or owner address.
+- Configure salary payment intervals.
+- Practice managing salary-related data.
+- Explore ETH payments and access control.
 
-#### Solidity Concepts
+**Concepts Learned**
+- Modifiers and access control
+- `msg.sender` and `msg.value`
+- Payable functions
+- Time-based conditions
+- ETH transfer logic
 
-* `payable`
-* `msg.value`
-* `msg.sender`
-* `address`
-* `address payable`
-* Dynamic arrays
-* `require()`
-* Ether transfer
-* Contract balance
-* Random number generation
+### 4. 🪙 ERC-20 Token Smart Contract
 
----
-3. Payroll System Smart Contract 💰
+A basic ERC-20-style token implementation built to understand fungible tokens and token transfers.
 
-A payroll management smart contract that allows an administrator to manage employees and distribute salaries in ETH.
+**Features**
+- Token name and symbol
+- Initial token supply
+- Token balances
+- Token transfers
+- Allowances and delegated transfers
+- `Transfer` and `Approval` events, if implemented in the version used
 
-Features
+**Concepts Learned**
+- Mappings
+- Nested mappings
+- Constructors
+- `transfer()`
+- `approve()`
+- `transferFrom()`
+- Token decimals and base units
 
-Add employees with their names, wallet addresses, and salaries.
+### 5. 🔰 Proity Token (PRT)
 
-Update employee salaries.
+Proity (PRT) is a token contract that inherits from the ERC20 contract.
 
-Remove employees.
+**Token Information**
+- **Token Name:** Proity
+- **Token Symbol:** PRT
+- **Token Standard Goal:** ERC-20
+- **Language:** Solidity
 
-Store employee records using mappings.
+**Features**
+- Inherits functionality from the ERC20 contract.
+- Accepts an initial supply during deployment.
+- Demonstrates Solidity inheritance and constructor arguments.
 
-Maintain an array of employee addresses.
-
-Pay all eligible employees in a single transaction.
-
-Pay an individual employee.
-
-Fund the contract with ETH.
-
-Check contract balance and employee count.
-
-Configure the salary payment interval.
-
-Concepts Practiced
-
-Structs and mappings
-
-Arrays and loops
-
-Modifiers and access control
-
-Block timestamps
-
-Payable addresses
-
-ETH transfers using call
-
-Contract balance management
-
-File: PayRoll.sol
-
-Note: Salary values are stored in Wei. Batch salary payments require sufficient contract balance and gas. The current zero payment interval is intended for testing and allows eligible employees to be paid without waiting for a time interval.
+**Concepts Learned**
+- Contract inheritance
+- Parent constructor calls
+- Solidity imports
+- Code reusability
+- Token deployment
 
 ## 🛠️ Technologies Used
 
-* **Solidity**
-* **Ethereum / EVM**
-* **Remix IDE**
-* **MetaMask**
-* **Git & GitHub**
+- **Solidity** — Smart contract programming
+- **Remix IDE** — Writing, compiling, and deploying contracts
+- **MetaMask** — Wallet connection and transaction signing
+- **Ethereum Sepolia Testnet** — Smart contract testing
+- **Git & GitHub** — Version control and project management
 
----
+## 🚀 How to Run the Projects
 
+1. Open [Remix IDE](https://remix.ethereum.org/).
+2. Create or import the required Solidity files.
+3. Make sure imported filenames and paths match exactly.
+4. Select the appropriate Solidity compiler version, such as `0.8.20` for contracts using `pragma solidity ^0.8.20;`.
+5. Compile the contract.
+6. For local testing, select a Remix VM environment.
+7. For Sepolia deployment, connect MetaMask through the injected provider and select Sepolia.
+8. Enter the required constructor parameters and deploy the contract.
+9. Test the available functions and inspect transaction results.
 
+**Important:** Sepolia deployment requires Sepolia test ETH for gas fees. Test ETH has no intended real-world monetary value.
 
-## 🧠 What I Am Learning
+## 📚 Key Learning Outcomes
 
 Through these projects, I am practicing:
 
-* Smart contract development
-* Solidity syntax and programming concepts
-* Ethereum transactions
-* Wallet interaction
-* ETH payments
-* Mappings and structs
-* Contract state management
-* Access control
-* On-chain data handling
+- Solidity fundamentals and data types
+- Smart contract deployment
+- Inheritance and constructors
+- Structs, arrays, and mappings
+- ETH transfers and payable functions
+- Token balances, approvals, and transfers
+- Access control and validation
+- Blockchain transactions and debugging
 
----
+## 🔮 Future Improvements
 
-## 🔮 Future Plans
+- Improve contract validation and error handling.
+- Add automated smart contract tests.
+- Use OpenZeppelin implementations where appropriate.
+- Build a frontend using JavaScript, React, and Ethers.js.
+- Connect smart contracts with MetaMask.
+- Explore more advanced Web3 and dApp development concepts.
 
-I plan to connect these smart contracts with a Web3 frontend using:
+## ⚠️ Disclaimer
 
-* JavaScript
-* React.js
-* ethers.js
-* MetaMask
+These projects are created for educational purposes and blockchain development practice. They have not necessarily been audited or reviewed for production use. The custom ERC-20-style implementation may not implement every requirement of the ERC-20 standard.
 
-The goal is to convert these smart contracts into complete **Web3 DApps** with user-friendly interfaces.
+Do not use these contracts to manage real funds without appropriate testing, security review, and auditing.
 
----
+## 🤝 Contributions
 
-## 👨‍💻 Author
+Suggestions, feedback, and learning-focused contributions are welcome.
 
-**Rehan Ansari**
+If you find an issue or have an improvement idea, feel free to open an issue or submit a pull request.
 
-Blockchain Developer | Solidity | Web3
+## ⭐ Support
 
----
+If you find this repository useful, consider giving it a star!
 
-⭐ This repository documents my practical learning journey in **Solidity and Blockchain Development**.
+**Keep Learning. Keep Building. Keep Exploring Blockchain.** 🚀
