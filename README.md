@@ -131,6 +131,43 @@ Proity (PRT) is a token contract that inherits from the ERC20 contract.
 
 **Important:** Sepolia deployment requires Sepolia test ETH for gas fees. Test ETH has no intended real-world monetary value.
 
+## 🔄 Automated Market Maker (AMM)
+
+A Solidity-based Automated Market Maker (AMM) smart contract built to understand the fundamentals of decentralized finance (DeFi).
+
+### ✨ Features
+- Add liquidity using two ERC-20 tokens
+- Swap Token A for Token B
+- Swap Token B for Token A
+- Calculate token swap amounts using the constant-product pricing formula
+- Apply a 0.3% fee in the swap calculation
+
+### 🛠️ Tech Stack
+- Solidity `^0.8.20`
+- Remix IDE
+- ERC-20 Tokens
+- MetaMask
+- Ethereum Sepolia Testnet for testing
+
+### 📐 Pricing Formula
+The contract uses the constant-product AMM pricing approach with a 0.3% fee:
+
+`amountOut = (amountIn × 997 × reserveOut) / (reserveIn × 1000 + amountIn × 997)`
+
+### 📚 What I Learned
+- Liquidity pools and token reserves
+- ERC-20 `transferFrom()` and `transfer()`
+- Token swap calculations
+- Solidity `require()` validations
+- Basic DeFi and AMM concepts
+
+### ⚠️ Note
+This is an educational project and has not been audited for production use.
+
+
+
+
+
 ## 📚 Key Learning Outcomes
 
 Through these projects, I am practicing:
