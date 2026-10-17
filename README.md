@@ -131,7 +131,7 @@ Proity (PRT) is a token contract that inherits from the ERC20 contract.
 
 **Important:** Sepolia deployment requires Sepolia test ETH for gas fees. Test ETH has no intended real-world monetary value.
 
-## 🔄 Automated Market Maker (AMM)
+#6 🔄 Automated Market Maker (AMM)
 
 A Solidity-based Automated Market Maker (AMM) smart contract built to understand the fundamentals of decentralized finance (DeFi).
 
